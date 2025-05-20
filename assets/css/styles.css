@@ -8,14 +8,13 @@
 /* global styles */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
-body{
-    font-family : 'Poppins', sans-serif;
-    background-color: #a4c2d1;  /* egg blue */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a4c2d1; /* egg blue */
 }
 
 h1,
-h2 
-{
+h2 {
     font-family: 'DM Serif Display', serif;
     color: #184f63; /* dark-blue */
 }
@@ -24,13 +23,26 @@ h2
 .sharp-corners * {
     border-radius: 0;
 }
+
+/* Buttons */
+
+.custom-button {
+    background-color: #1f7798; /* mid-blue */
+    border: #1f7798;
+}
+
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a;
+}
+
 /* About section */
 
 #about {
     background-color: white; 
 }
 
-/* Portfolio  */
+/* Portfolio */
 
 #portfolio {
     background-color: #dbdcde; /* light grey */
@@ -57,7 +69,7 @@ h2
 /* Header */
 
 #hero {
-    background-color: dbdcde; /* light grey */
+    background-color: #dbdcde; /* light grey */
     background-image: url("../images/background.webp");
     background-size: cover;
     background-position: 50% 70%;
@@ -69,8 +81,9 @@ h2
 
 /* Use Bootstrap breakpoint for XL screens */
 @media screen and (min-width: 1200px) {
-    /* Fixes all portfolio card being too tall on xl screens */
+    /* Fixes all portfolio cards being too tall on xl screens */
     #portfolio .card-text {
         min-height: auto;
     }
 }
+
